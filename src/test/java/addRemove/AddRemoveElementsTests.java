@@ -15,7 +15,7 @@ public class AddRemoveElementsTests extends BaseTests {
     AddRemoveElements addRemove;
 
     @Test
-    public void testAddElements(){//comprueba qu agrega 3 elementos Delete
+    public void testAddElements(){//comprueba que agrega 3 elementos Delete
         addRemove = homePage.ClickAddRemoveLink();
         for (int i = 0; i < 3; i++) {
             addRemove.clickAddButton();

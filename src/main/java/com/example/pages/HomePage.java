@@ -10,6 +10,10 @@ public class HomePage extends BasePage {
     private By addRemoveLink = By.linkText("Add/Remove Elements");
     private By ShiftingContentLink = By.linkText("Shifting Content");
 
+    public void clickLink(String linkText){
+        driver.findElement(By.linkText(linkText)).click();
+    }
+
     public HomePage(WebDriver Driver){
         this.driver = Driver;
     }
@@ -29,4 +33,13 @@ public class HomePage extends BasePage {
         return new ShiftingContent(driver);
     }
     
+    public DropDownPage ClickDropDownLink(){
+        clickLink("Dropdown");
+        return new DropDownPage(driver);
+    }
+
+    public ForgotPasswordPage ClickForgotPaswordLink(){
+        clickLink("Forgot Password");
+        return new ForgotPasswordPage(driver);
+    }
 }

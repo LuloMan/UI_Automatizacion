@@ -10,13 +10,13 @@ public class HorizontalSliderPage {
     private WebDriver driver;
 
     private By slider = By.cssSelector("input[type='range']");
-    private By valueLabel = By.id("range");
+    private By value = By.id("range");
 
     public HorizontalSliderPage(WebDriver driver) {
         this.driver = driver;
     }
 
-    public void moveSliderTo(double targetValue) {
+    public void moveSlider(double targetValue) {
         WebElement sliderElement = driver.findElement(slider);
 
         double valor = 0.0;
@@ -27,6 +27,6 @@ public class HorizontalSliderPage {
     }
 
     public String getSliderValue() {
-        return driver.findElement(valueLabel).getText();
+        return driver.findElement(value).getText();
     }
 }

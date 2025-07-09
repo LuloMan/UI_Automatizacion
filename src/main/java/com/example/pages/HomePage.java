@@ -47,4 +47,9 @@ public class HomePage extends BasePage {
         clickLink("Hovers"); 
         return new HoversPage(driver); 
     }
+
+    public HorizontalSliderPage ClickHorizontalSliderLink(){
+        clickLink("Horizontal Slider");
+        return new HorizontalSliderPage(driver);
+    }
 }

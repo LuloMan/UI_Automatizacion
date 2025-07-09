@@ -19,10 +19,10 @@ public class HorizontalSliderPage {
     public void moveSliderTo(double targetValue) {
         WebElement sliderElement = driver.findElement(slider);
 
-        double currentValue = 0.0;
-        while (currentValue < targetValue) {
+        double valor = 0.0;
+        while (valor < targetValue) {
             sliderElement.sendKeys(Keys.ARROW_RIGHT);
-            currentValue += 0.5;
+            valor += 0.5;
         }
     }
 

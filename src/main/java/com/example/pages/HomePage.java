@@ -42,4 +42,9 @@ public class HomePage extends BasePage {
         clickLink("Forgot Password");
         return new ForgotPasswordPage(driver);
     }
+
+    public HoversPage clickHovers(){ 
+        clickLink("Hovers"); 
+        return new HoversPage(driver); 
+    }
 }

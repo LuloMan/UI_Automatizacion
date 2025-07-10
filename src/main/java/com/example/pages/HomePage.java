@@ -52,4 +52,9 @@ public class HomePage extends BasePage {
         clickLink("Horizontal Slider");
         return new HorizontalSliderPage(driver);
     }
+
+     public AlertsPage ClickAlertsLink() {
+        clickLink("JavaScript Alerts");
+        return new AlertsPage(driver);
+    }
 }

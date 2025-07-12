@@ -9,7 +9,7 @@ import org.testng.annotations.BeforeClass;
 import com.example.pages.HomePage;
 
 public class BaseTests {
-    private WebDriver driver;
+    protected WebDriver driver;
 
     protected HomePage homePage;
     

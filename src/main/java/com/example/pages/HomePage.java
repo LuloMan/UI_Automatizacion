@@ -62,4 +62,9 @@ public class HomePage extends BasePage {
         clickLink("File Upload");
         return new FileUploadPage(driver);
     }
+
+    public EntryAdPage ClickEntryAdLink() {
+        clickLink("Entry Ad");
+        return new EntryAdPage(driver);
+    }
 }

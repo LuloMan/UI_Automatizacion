@@ -67,4 +67,9 @@ public class HomePage extends BasePage {
         clickLink("Entry Ad");
         return new EntryAdPage(driver);
     }
+
+    public ContextMenuPage ClickContextMenuLink() {
+        clickLink("Context Menu");
+        return new ContextMenuPage(driver);
+    }
 }

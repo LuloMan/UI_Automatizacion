@@ -77,4 +77,9 @@ public class HomePage extends BasePage {
         clickLink("Nested Frames");
         return new NestedFramesPage(driver);
     }
+
+    public LargeAndDeepDomPage ClickLargeAndDeepDom(){ 
+        clickLink("Large & Deep DOM"); 
+        return new LargeAndDeepDomPage(driver); 
+} 
 }

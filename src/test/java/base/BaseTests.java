@@ -26,6 +26,6 @@ public class BaseTests {
 
     @AfterClass
     public void tearDown(){
-        driver.quit(); //cierra la ventana y la sesion
+        //driver.quit(); //cierra la ventana y la sesion
     }
 }

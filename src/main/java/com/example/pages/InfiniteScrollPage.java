@@ -24,7 +24,7 @@ public class InfiniteScrollPage {
 
         while (getParrafo().size() < 5) {
             //el siguiente script scrollea hasta al final del pom al poner scrollHeight en la posicion "y"
-            ((JavascriptExecutor) driver).executeScript("window.scrollTo(0, document.body.scrollHeight)");
+            ((JavascriptExecutor)driver).executeScript("window.scrollTo(0, document.body.scrollHeight)");
             wait.withTimeout(Duration.ofSeconds(5));
         }
     }

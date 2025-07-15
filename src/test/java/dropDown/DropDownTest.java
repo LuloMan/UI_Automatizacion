@@ -18,4 +18,15 @@ public class DropDownTest extends BaseTests {
         Assert.assertTrue(selectedOptions.contains(option));
     }
 
+    @Test
+    public void testMultiSelectOptions() {
+        var dropDownPage = homePage.ClickDropDownLink();
+        dropDownPage.enableMultiSelect();
+        dropDownPage.selectFromDropDown("Option 1");
+        dropDownPage.selectFromDropDown("Option 2");
+        var selectedOptions = dropDownPage.getSelectedOption();
+        
+        Assert.assertEquals(selectedOptions.size(), 2);
+    }
+
 }

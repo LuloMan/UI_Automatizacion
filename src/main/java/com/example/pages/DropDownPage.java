@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
@@ -34,6 +35,13 @@ public class DropDownPage {
 
     private Select findDropDownElement(){
         return new Select(driver.findElement(dropdown));
+    }
+
+    public void enableMultiSelect() {
+        WebElement dropElement = driver.findElement(dropdown);
+        //El siguiente script añade el atributo multiple al elemento dropdown para seleccionar multiples opciones
+        String script = "arguments[0].setAttribute('multiple', '')";
+        ((JavascriptExecutor) driver).executeScript(script, dropElement);
     }
 
 }

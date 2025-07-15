@@ -87,4 +87,5 @@ public class HomePage extends BasePage {
         clickLink("Infinite Scroll");
         return new InfiniteScrollPage(driver);
     }
+
 }
